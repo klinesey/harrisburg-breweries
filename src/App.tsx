@@ -1,26 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
+import Breweries from './components/breweries';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  state = { breweries:[]};
+
+  
+/*   componentDidMount()
+  {
+    fetch(`https://api.openbrewerydb.org/breweries?by_city=harrisburg`)
+    .then(res => res.json())
+    .then((data) => {
+      this.setState({breweries: data})
+    })
+    .catch(console.log)
+  } */
+
+  render() {
+    return (
+/*       <div className="container">
+        <h1 className="header">Harrisburg Breweries</h1>
+        <div className="left">
+           <Breweries breweries={this.state.breweries} />
+          <Breweries />
+        </div>
+        <div className="right">
+          Details here
+        </div>
+      </div>
+ */
+      <Breweries />
+    );
+  }
 }
 
 export default App;

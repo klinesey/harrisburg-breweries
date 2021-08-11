@@ -36,3 +36,87 @@
     transform: rotate(360deg);
   }
 }
+
+html, body {
+  height: 100%;
+  margin: 0px;
+}
+
+#root {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #B0B0B0;
+}
+
+.container {
+  padding: 0px;
+  margin: auto;
+  width: 1000px;
+  height: 100%;
+  border: 1px solid black;
+}
+
+.left {
+  width: 30%;
+  border-right: 1px solid black;
+  background-color: lightgray;
+  display: block;
+  float: left;
+}
+.right {
+  width: 69%;
+  height: 100%;
+  background: url('./images/background.jpg') no-repeat;
+  background-size: cover;
+  display: flex;
+  float: left;
+}
+
+.rightCard {
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+  width: 100%;
+}
+
+.breweryName{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.breweryAddress{
+  margin: 5px 0px;
+}
+
+.breweryMap {
+  width: 500px;
+  height: 400px;
+  margin: 10px 0px;
+  border: 1px solid black;
+  position: relative;
+}
+
+.card {
+  border-bottom: 1px solid black;
+  padding: 2px 0px 5px 2px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bolder;
+  padding-bottom: 1px;
+  margin-bottom: 1px;
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  background-color: lightgray;
+  border-bottom: 1px solid black;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+  display: block;
+}
